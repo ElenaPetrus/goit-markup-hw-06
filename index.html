@@ -390,6 +390,18 @@
             </li>
             </ul>
         </section>
+        <section class="signup">
+        <h2 class="visually-hidden">Подисаться на рассылку</h2>
+        <b class="sign">Подпишитесь на расслыку</b>
+        <form class="sign-form">
+            <input type="email" name="use-email" placeholder="E-mail" class="footer-input" required>
+            <button class="sign-btn" type="submit">Подписаться
+            <svg class="sign-btn-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+        </button>
+        </form>
+        </section>
     </div> 
     </footer>
      <!--modal-->
@@ -399,8 +411,37 @@
             <svg class="modal-close-btn-icon" width="11px" height="11px" >
             <use href="./images/icons.svg#icon-Vector"></use>
             </svg>
-        </button>  
-           
+        </button> 
+       
+        <form class="modal-form">
+            <b class="user-data">Оставьте свои данные, мы вам перезвоним</b>
+            <label class="modal-form-field">
+                Имя
+            <input type="text" name="use-mail" placeholder="" class="modal-form-input" minlength="2" required>
+            </label>
+
+            <label class="modal-form-field">
+                Телефон
+            <input type="tel" name="use-phone" placeholder="" class="modal-form-input" required>
+            </label>
+
+            <label>
+                Почта
+            <input type="email" name="use-email" placeholder="" class="modal-form-input" required>
+            </label>
+
+            <label>
+                Коментарий
+            <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+            </label>
+
+            <input type="checkbox" name="use-term" value="use-term" class="modal-form-term" required>
+            <label  class="modal-form-check">
+            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
+            </label>
+
+            <button type="submit" class="modal-form-btn">Отправить</button>
+        </form>  
     </div>
 </div>
 <script src="./js/modal.js"></script>
